@@ -1,0 +1,10 @@
+#myVideo {
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+}
