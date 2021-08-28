@@ -1,4 +1,7 @@
 "use strict";
+// find and store DOM elements to work with
+const myVideo = document.getElementById("myVideo");
+
 // settig up a duration and displaying it
 var i=0;
     function buttonClick1(){
@@ -34,3 +37,8 @@ var i=0;
     
         }      
     }, false);
+
+// Alert on video ending
+myVideo.onended = function() {
+  alert("You have Finished your Goal");
+};
