@@ -1,8 +1,5 @@
 "use strict";
-
-// find and store dom elements to work with
-const selectionForm = document.querySelector(".selection_form")
-
+// settig up a duration and displaying it
 var i=0;
     function buttonClick1(){
         i++;
@@ -22,4 +19,18 @@ var i=0;
         document.getElementById("goal").innerHTML = inputval;
     }
 
-   
+    // video loop 
+    var iterations = 1
+    document.getElementById('goalvalue').innerText = iterations;
+    myVideo.addEventListener('ended', function () {    
+    
+        if (iterations < 5) {       
+    
+            this.currentTime = 0;
+            this.play();
+            iterations ++;
+            
+            document.getElementById('goalvalue').innerText = iterations;
+    
+        }      
+    }, false);
