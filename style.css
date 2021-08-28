@@ -51,18 +51,23 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: solid rgba(255, 255, 255, 0.701) 3px;
 }
 
 .workout-image:hover {
   border: solid white 3px;
 }
 
-.workout-description {
-  color: rgba(255, 255, 255, 0.701);
-}
-
 .workout-description:hover {
   color: white;
 }
 
+.button{
+  background-color: #6F4411;
+  color:white;
+  border-radius:1.25rem;
+}
+
+.goal{
+  color:white;
+  background-color: #C8C969;
+}

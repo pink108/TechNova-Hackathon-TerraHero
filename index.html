@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <img class="icon-img" src="./src/images/Icon.png" alt="TerraHero icon">
+      <img class="icon-img" src="./src/images/usericon.png" alt="TerraHero icon">
     </header>
 
     <div class="workout-div">
@@ -19,24 +19,47 @@
       <ul class="workout-list">
         <li class="workout-list-item">
           <a href="./src/pages/curls.html" class="workout-link">
-            <img class="workout-image" src="./src/images/curls.png" alt="arm curls">
-            <p class="workout-description">Arm Curls</p>
+            <p class="color-brown">Arm Curls</p>
+            <img class="workout-image" src="./src/images/armcurls.png" alt="arm curls">
           </a>
         </li>
         <li class="workout-list-item">
-          <a href=#>
-            <img class="workout-image" src="./src/images/squats.png" alt="leg squats">
-            <p class="workout-description">Leg Squats</p>
+          <a href="./src/pages/curls.html" class="workout-link">
+            <p class="color-brown">Leg Squats</p>
+            <img class="workout-image" src="./src/images/armcurls.png" alt="leg squats">
           </a>
         </li>
         <li class="workout-list-item">
-          <a href=#>
-            <img class="workout-image" src="./src/images/crunches.png" alt="abs crunches">
-            <p class="workout-description">Abs Crunches</p>
+          <a href="./src/pages/curls.html" class="workout-link">
+            <p class="color-brown">Abs Crunches</p>
+            <img class="workout-image" src="./src/images/armcurls.png" alt="abs crunches">
           </a>
         </li>
       </ul>      
     </div>
+    <div >
+      <div>
+        <div>
+          <p class="color-brown">Goal</p>
+          <input type="text" id="goalvalue" value="0" class="goal"></input>
+        </div>
+        <p class="color-brown">Select Duration</p>
+        <form id="selection_form">
+          <button id="1min" class="button" type="submit" onclick="buttonclick1()">1 min</button>
+          <button id="5min" class="button" type="submit" onclick="buttonclick5()">5 min</button>
+          <button id="10min" class="button" type="submit" onclick="buttonclick10()">10 min</button>
+        </form>
+        
+      </div>
+      
+    </div>
     <script src="script.js"></script>
+    <!-- <script>
+      var i=0;
+      function buttonclick(){
+        i++;
+        document.getElementById('1 min').value = ++i;
+        }
+    </script> -->
   </body>
 </html>
