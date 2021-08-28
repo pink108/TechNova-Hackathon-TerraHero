@@ -65,7 +65,14 @@ body {
   background-color: #6F4411;
   color:white;
   border-radius:1.25rem;
+  
 }
+.button :active{
+  color: #8BC22F;
+}
+
+
+
 
 .goal{
   color:white;

@@ -37,29 +37,28 @@
         </li>
       </ul>      
     </div>
-    <div >
-      <div>
-        <div>
-          <p class="color-brown">Goal</p>
-          <input type="text" id="goalvalue" value="0" class="goal"></input>
-        </div>
-        <p class="color-brown">Select Duration</p>
-        <form id="selection_form">
-          <button id="1min" class="button" type="submit" onclick="buttonclick1()">1 min</button>
-          <button id="5min" class="button" type="submit" onclick="buttonclick5()">5 min</button>
-          <button id="10min" class="button" type="submit" onclick="buttonclick10()">10 min</button>
-        </form>
-        
-      </div>
       
-    </div>
+        <div>
+          <p class="color-brown">Set you Goal</p>
+          <input type="text" placeholder="Enter in Min" id="userinput">
+          <button class="button" type="button" onclick="getInputValue()">Set</button>
+        </div>
+          <p class="color-brown">Your goal is <span id="goal"></span></p>
+        
+        <div>
+          <input type="text" id="goalvalue" value="0" class="goal"></input>
+
+          <p class="color-brown">Select Duration</p>
+          <form id="selection_form">
+            <button id="btn" class="button" type="submit" onclick="buttonClick1()">1 min</button>
+            <button id="btn" class="button" type="submit" onclick="buttonClick5()">5 min</button>
+            <button id="btn" class="button" type="submit" onclick="buttonClick10()">10 min</button>
+          </form>
+        
+        </div>
+    
+      
+  
     <script src="script.js"></script>
-    <!-- <script>
-      var i=0;
-      function buttonclick(){
-        i++;
-        document.getElementById('1 min').value = ++i;
-        }
-    </script> -->
   </body>
 </html>

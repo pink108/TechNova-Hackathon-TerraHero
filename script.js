@@ -4,13 +4,22 @@
 const selectionForm = document.querySelector(".selection_form")
 
 var i=0;
-    function buttonclick1(){
+    function buttonClick1(){
         i++;
         document.getElementById("goalvalue").value = i;
         }
-    function buttonclick5(){
-        document.getElementById("goalvalue").value = i+5;
+    function buttonClick5(){
+        i=i+5;
+        document.getElementById("goalvalue").value = i;
         }
-    function buttonclick10(){
-        document.getElementById("goalvalue").value = i+10;
+    function buttonClick10(){
+        i=i+10;
+        document.getElementById("goalvalue").value = i;
         }
+
+    function getInputValue(){
+        var inputval = document.getElementById("userinput").value;
+        document.getElementById("goal").innerHTML = inputval;
+    }
+
+   
