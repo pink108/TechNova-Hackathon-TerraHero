@@ -24,21 +24,36 @@ var i=0;
 
     // video loop 
     var iterations = 1
-    document.getElementById('goalvalue').innerText = iterations;
-    myVideo.addEventListener('ended', function () {    
+    // document.getElementById('goalvalue').innerText = iterations;
+    // myVideo.addEventListener('ended', function () {    
     
-        if (iterations < 5) {       
+    //     if (iterations < 2) {       
+    
+    //         this.currentTime = 0;
+    //         this.play();
+    //         iterations ++;
+            
+    //         document.getElementById('goalvalue').innerText = iterations;
+            
+    //     }  
+     
+    // }, false);
+    
+    document.getElementById('myVideo').addEventListener('ended', myHandler,false);
+    function myHandler() {      
+        if (iterations < 2) {       
     
             this.currentTime = 0;
             this.play();
-            iterations ++;
-            
-            document.getElementById('goalvalue').innerText = iterations;
+            iterations ++;    
+            document.getElementById('goalvalue').innerText = iterations;          
+        }  
+    }
     
-        }      
-    }, false);
 
-// Alert on video ending
-myVideo.onended = function() {
-  alert("You have Finished your Goal");
-};
+
+// var iteration =1;
+document.getElementById('myVideo').addEventListener('ended',myAlert,false);
+    function myAlert(e) {
+        alert("You have finished your goal")
+    }
