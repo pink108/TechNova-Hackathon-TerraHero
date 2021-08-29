@@ -4,7 +4,6 @@
       <title>TerraHero</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@800&family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header>
@@ -15,54 +14,47 @@
       <h1>
         <span class="color-brown">Hi</span> <span class="color-green">USERNAME</span>
       </h1>
-      <h1><span class="color-brown">Ready for</span> <span class="color-green">WORKOUT</span><span class="color-brown">?</span></h1>
+      <h1>
+        <span class="color-brown">Ready for </span><span class="color-green">WORKOUT</span><span class="color-brown">?</span>
+      </h1>
       <ul class="workout-list">
         <li class="workout-list-item">
           <a href= "./src/pages/curls.html" class="workout-link">
             <p class="color-brown">Arm Curls</p>
-            <img class="workout-image" src="./src/images/armcurls.png" alt="arm curls">
+            <img class="workout-image" src="./src/images/armCurls.png" alt="arm curls">
           </a>
         </li>
         <li class="workout-list-item">
-          <a href="./src/pages/curls.html" class="workout-link">
+          <a href="./src/pages/squats.html" class="workout-link">
             <p class="color-brown">Leg Squats</p>
-            <img class="workout-image" src="./src/images/armcurls.png" alt="leg squats">
+            <img class="workout-image" src="./src/images/legSquats.png" alt="leg squats">
           </a>
         </li>
         <li class="workout-list-item">
-          <a href="./src/pages/curls.html" class="workout-link">
+          <a href="./src/pages/crunches.html" class="workout-link">
             <p class="color-brown">Abs Crunches</p>
-            <img class="workout-image" src="./src/images/armcurls.png" alt="abs crunches">
+            <img class="workout-image" src="./src/images/absCrunches.png" alt="abs crunches">
           </a>
         </li>
       </ul>      
     </div>
-      
-        <div>
-          <p class="color-brown">Set you Goal</p>
-          <input type="text" placeholder="Enter in Min" id="userinput" class="input">
-          <button class="button" type="button" onclick="getInputValue()">Set</button>
-        </div>
-          <p class="color-brown">Your goal is <span id="goal"></span></p>
-        
-        <div>
-          <input type="text" id="goalvalue" value="0" class="input"></input>
 
-          <p class="color-brown">Select Duration</p>
-          <form id="selection_form">
-            <button id="btn" class="button" type="submit" onclick="buttonClick1()">1 min</button>
-            <button id="btn" class="button" type="submit" onclick="buttonClick5()">5 min</button>
-            <button id="btn" class="button" type="submit" onclick="buttonClick10()">10 min</button>
-          </form>
-        
-          <video autoplay muted id="myVideo" source src="./src/videos/curls.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-
-        </div>
+    <div class="overall-goal-div">
+      <p class="color-brown">Set Your Overall Goal</p>
+      <input type="number" min="1" id="userinput" class="input"><br><br>
+      <button class="button" type="button" onclick="getInputValue()">Set</button>
+    </div><br>
     
-      
-  
+    <div class="session-goal-div">
+      <p class="color-brown">Select Your Session Duration</p>
+      <form id="selection_form">
+        <label for=""></label>
+        <button id="btn1" class="button" type="submit" onclick="buttonClick1()">1 min</button>
+        <button id="btn2" class="button" type="submit">5 min</button>
+        <button id="btn3" class="button" type="submit">10 min</button>
+      </form>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
