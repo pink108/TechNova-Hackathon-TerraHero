@@ -4,7 +4,7 @@ body {
   color:rgba(255, 255, 255, 0.701);
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;;
-  background-color: #E4E5A3;
+  background-image: url(./src/images/Frame_1.jpg);
 }
 
 .icon-img {
@@ -65,14 +65,11 @@ body {
   background-color: #6F4411;
   color:white;
   border-radius:1.25rem;
-  
+  cursor: pointer; 
 }
-.button :active{
-  color: #8BC22F;
+.button:active{
+  background-color: #8BC22F;
 }
-
-
-
 
 .input{
   color:white;
